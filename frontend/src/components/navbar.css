@@ -1,0 +1,88 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    padding: 1rem 3rem;
+    background: #343a40;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;  /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* Ensure it's above other elements */
+
+  }
+  
+  .logo {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  
+  .search-input {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+  }
+  
+  .login-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(16, 181, 247);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #00c6ff;
+  }
+  
+.nav-buttons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ 
+}
+
+.nav-buttons span {
+  font-size: 25px;
+  font-weight: bold;
+  background: linear-gradient(to left, #00c6ff, #0072ff, #a200ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+.nav-buttons button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  opacity: 0.8;
+  color: #fff;
+  background: #00c6ff;
+}

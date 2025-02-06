@@ -1,0 +1,24 @@
+# Root-level
+node_modules/
+*.log
+.env
+build/
+
+# Frontend-specific
+/frontend/node_modules/
+/frontend/.env
+/frontend/build/
+/frontend/.pnp/
+/frontend/.pnp.js
+
+# Backend-specific
+/backend/node_modules/
+/backend/.env
+/backend/.pnp/
+/backend/.pnp.js
+
+# Miscellaneous
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
