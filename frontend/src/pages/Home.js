@@ -17,7 +17,7 @@ const Home = () => {
       navigate('/auth');
     } else {
       axios
-        .get('http://localhost:5001/api/products')
+        .get('https://tech-world-bhtl.onrender.com/api/products')
         .then((response) => {
           setProducts(response.data);
           setFilteredProducts(response.data); // Initially show all products

@@ -11,7 +11,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/products/${id}`);
+        const response = await axios.get(`https://tech-world-bhtl.onrender.com/api/products/${id}`);
         setProduct(response.data);
         setLoading(false);
       } catch (error) {

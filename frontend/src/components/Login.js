@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/auth/login', formData);
+      const response = await axios.post('https://tech-world-bhtl.onrender.com/api/auth/login', formData);
       localStorage.setItem('authToken', response.data.token);
       localStorage.setItem('user', JSON.stringify({ username: response.data.username }));
       window.location = '/'; // Redirect to Home page after successful login

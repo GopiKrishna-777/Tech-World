@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5001/api/auth/signup', formData);
+      await axios.post('https://tech-world-bhtl.onrender.com/api/auth/signup', formData);
       alert('Signup successful, please log in');
       setFormData({ username: "", email: "", password: "" });
     } catch (error) {
