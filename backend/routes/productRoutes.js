@@ -6,6 +6,7 @@ const router = express.Router();
 router.get('/', async (req, res) => {
   try {
     const products = await Product.find(); // Fetch all products from the database
+    console.log(products);
     res.json(products); // Send the list of products as the response
   } catch (error) {
     res.status(500).json({ message: error.message }); // Handle server errors
